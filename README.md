@@ -10,3 +10,10 @@ TODO:
  - verify order of execution among many test modules
  - stop at first failed test ?
 
+
+References:
+-----------
+ - The original! http://rubykoans.com
+ - https://github.com/torbjoernk/CppKoans/
+ - https://github.com/cdarwin/go-koans
+
