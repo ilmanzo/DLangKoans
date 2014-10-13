@@ -1,7 +1,7 @@
 DLangKoans
 ==========
 
-inspired from RubyKoans, CppKoans, GoKoans; an educational unit test suite for the D Programming Language
+inspired from RubyKoans, CppKoans, GoKoans; an educational unit test suite for the [D Programming Language](http://dlang.org)
 
 work in progress
 
