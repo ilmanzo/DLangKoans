@@ -1,11 +1,17 @@
 module helpers;
 
-int __() pure
+char FILL_IN_THIS_CHAR() pure
+{
+	return ' ';
+}
+
+int FILL_IN_THIS_NUMBER() pure
 {
 	return 42;
 }
 
-string ___() pure  
+string FILL_IN_THIS_STRING() pure  
 {
 	return "a random string";
 }
+
