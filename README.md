@@ -5,6 +5,14 @@ inspired from RubyKoans, CppKoans, GoKoans; an educational unit test suite for t
 
 work in progress
 
+
+How it works:
+------------
+ - run rdmd main.d
+ - observe test errors
+ - think and make the test pass
+ - goto first step
+
 TODO:
 ----
  - verify order of execution among many test modules

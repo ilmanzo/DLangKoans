@@ -13,4 +13,11 @@ class AboutChars
 			char a_character = 'a';
 			assertEquals(a_character, FILL_IN_THIS_CHAR);
 		}
+
+	@Test
+		public void chars_have_a_size()
+		{
+			char a_character = 'a';
+			assertEquals(a_character.sizeof,FILL_IN_THIS_NUMBER);
+		}
 }
