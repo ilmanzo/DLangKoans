@@ -18,7 +18,7 @@ class AboutChars
 		public void chars_have_a_size()
 		{
 			char a_character = 'b';
-			assertEquals(a_character.sizeof,FILL_IN_THIS_NUMBER);
+			assertEquals(a_character.sizeof,FILL_IN_THIS_CHAR);
 		}
 
 	@Test 

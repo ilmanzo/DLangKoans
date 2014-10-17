@@ -1,17 +1,5 @@
 module helpers;
 
-char FILL_IN_THIS_CHAR() pure
-{
-	return ' ';
-}
-
-int FILL_IN_THIS_NUMBER() pure
-{
-	return 42;
-}
-
-string FILL_IN_THIS_STRING() pure  
-{
-	return "a random string";
-}
-
+static immutable FILL_IN_THIS_CHAR = ' ';
+static immutable FILL_IN_THIS_NUMBER = 42;
+static immutable FILL_IN_THIS_STRING = "a random string";
