@@ -3,7 +3,6 @@ module about_pointers;
 import helpers;
 import dunit;
 
-
 class AboutPointers
 {
   
