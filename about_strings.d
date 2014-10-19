@@ -3,7 +3,6 @@ module about_strings;
 import helpers;
 import dunit;
 
-
 class AboutStrings
 {
     mixin UnitTest;
