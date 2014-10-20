@@ -17,10 +17,28 @@ class AboutStrings
 	  assertEquals(sentence[$-3..$],FILL_IN_THIS_STRING);
 	}
 
-    @Test
+  @Test
+  public void stringConcatenation()
+  {
+    auto str1="Hello";
+    auto str2=" World";
+    auto str=str1 ~ str2;
+    assertEquals(str, FILL_IN_THIS_STRING);
+  }
+
+  @Test
+    public void stringsAreImmutable()
+    {
+      auto str = "hello";
+      char[] s = "hello".dup;
+      s[0] = 'H';
+      assertEquals(s,FILL_IN_THIS_STRING);
+    }
+
+  @Test
     public void unicodeLiterals()
     {
-	  string s = "résumé"c;   // same as "résumé"
+      string s = "résumé"c;   // same as "résumé"
       wstring w = "résumé"w;
       dstring d = "résumé"d;
 

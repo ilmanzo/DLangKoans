@@ -6,6 +6,8 @@ import about_numbers;
 import about_chars;
 import about_strings;
 import about_pointers;
+import about_arrays;
+import about_associative_arrays;
 
 int main(string[] argv)
 {
