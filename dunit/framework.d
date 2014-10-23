@@ -249,6 +249,7 @@ body
                         { testClasses[className].after(testObject); })
                         && success;
             }
+            if (!success) break; // stop at first failed
         }
 
         if (testObject !is null && classSetUp)

@@ -25,10 +25,13 @@ class AboutAssociativeArrays
        auto age=ages["bob"];
        assertEquals(age, FILL_IN_THIS_NUMBER);
 
+       ages["bob"]=77;
+       assertEquals(ages["bob"],FILL_IN_THIS_NUMBER);
+
        import core.exception: RangeError;
        try 
        {
-         auto age=ages["steven"];
+         age=ages["steven"];
        }
        catch (RangeError e)
        {
@@ -36,7 +39,14 @@ class AboutAssociativeArrays
          assertEquals(e.msg,FILL_IN_THIS_STRING);
        }
 
+       ages["steven"]=66;  //new ones can be added
+       assertEquals(ages["steven"],FILL_IN_THIS_NUMBER);
 
+       assertEquals(ages.length, FILL_IN_THIS_NUMBER);
+
+       ages.remove("joe");  // you can also remove elements
+
+       assertEquals(ages.length, FILL_IN_THIS_NUMBER);
 
      }
   
