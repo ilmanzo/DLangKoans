@@ -3,6 +3,7 @@ import dunit;
 
 import about_basics;
 import about_numbers;
+import about_bitwise_operators;
 import about_chars;
 import about_strings;
 import about_pointers;
