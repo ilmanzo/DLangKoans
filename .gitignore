@@ -2,3 +2,5 @@
 *.obj
 
 .dub/
+dub.selections.json
+bin/dub
