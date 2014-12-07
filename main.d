@@ -11,10 +11,12 @@ import about_arrays;
 import about_associative_arrays;
 import about_foreach;
 import about_templates;
+import about_classes;
+import about_properties;
 
 int main(string[] argv)
 {
-	dunit_main(argv);
+  dunit_main(argv);
   return 0;
 }
 
