@@ -1,0 +1,11 @@
+{
+	"name": "DLang Koans",
+	"description": "A series of exercises to learn D Programming Language",
+	"copyright": "Copyright © 2014, Andrea Manzini",
+	"authors": ["Andrea Manzini"],
+	"homepage": "http://github.com/ilmanzo/DLangKoans",
+	"license": "GPL-2.0",
+	"dependencies": {
+		"d-unit": ">=0.7.1"
+	}
+}
