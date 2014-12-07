@@ -5,10 +5,16 @@ The D Programming Language Koans. Inspired from RubyKoans, CppKoans, GoKoans; an
 
 ...work in progress...
 
+SETUP:
+------
+ - clone or dowload this repositoty
+ - install dub build manager http://code.dlang.org/download
+ - enjoy
+
 
 How it works:
 ------------
- - run rdmd main.d
+ - execute dub
  - observe test errors
  - think and make the test pass
  - goto first step
@@ -17,6 +23,8 @@ TODO:
 ----
  - verify order of execution among many test modules
  - stop at first failed test ?
+ 
+
 
 
 References:

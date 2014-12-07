@@ -14,10 +14,5 @@ import about_templates;
 import about_classes;
 import about_properties;
 
-int main(string[] argv)
-{
-  dunit_main(argv);
-  return 0;
-}
-
+mixin Main;
 ///
