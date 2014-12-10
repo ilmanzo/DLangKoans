@@ -24,13 +24,33 @@ class AboutForeach
 		}
 
 	@Test
-		public void strings_iteration()  // in D, string are arrays of chars
+		public void strings_iteration()  // in D, string are immutable arrays of chars
 		{
+			char k;
+			foreach(c; "this is a short string")
+			{
+				k=c;
+			}
+			assertEquals(k,FILL_IN_THIS_CHAR);
 		}
 
 	@Test
 		public void foreach_with_associative_arrays()
 		{
+			int[string] aa;
+			string s;
+			int v;
+			aa["Torvalds"]=1969;
+			aa["Stallman"]=1953;
+			aa["Kernighan"]=1942;
+			aa["Ritchie"]=1941;
+			foreach (key,value ; aa)
+			{
+				s~=key[0];
+				v+=value-1900;
+			}
+			assertEquals(s,FILL_IN_THIS_STRING);
+			assertEquals(v,FILL_IN_THIS_NUMBER);
 		}
 
 
