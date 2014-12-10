@@ -7,7 +7,7 @@ The D Programming Language Koans. Inspired from RubyKoans, CppKoans, GoKoans; an
 
 SETUP:
 ------
- - clone or download this repositoty
+ - clone or download this repository
  - install dub build manager http://code.dlang.org/download
  - enjoy
 
