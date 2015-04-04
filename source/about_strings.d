@@ -11,7 +11,7 @@ class AboutStrings {
     auto sentence = "The quick brown fox";
     assertEquals(sentence[0], FILL_IN_THIS_CHAR);
     assertEquals(sentence[1..3], FILL_IN_THIS_STRING);
-    assertEquals(sentence[$], FILL_IN_THIS_CHAR);
+    assertEquals(sentence[$-1], FILL_IN_THIS_CHAR);
     assertEquals(sentence[$-3..$], FILL_IN_THIS_STRING);
   }
 
