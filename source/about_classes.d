@@ -26,7 +26,7 @@ class AboutClasses {
   mixin UnitTest;
 
   @Test
-  public void innheritance() {
+  public void inheritance() {
       auto instance = new B;
       assertEquals(instance.getDoubleValue(), FILL_IN_THIS_NUMBER);
   }
