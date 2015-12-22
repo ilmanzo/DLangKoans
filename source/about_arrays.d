@@ -24,6 +24,7 @@ class AboutArrays
     fruits ~= "strawberry";
     assertEquals(fruits.length, FILL_IN_THIS_NUMBER);
     assertEquals(fruits[2], FILL_IN_THIS_STRING);
+    assertEquals(1,1);
   }
 
 
