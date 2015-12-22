@@ -1,7 +1,7 @@
 {
 	"fileVersion": 1,
 	"versions": {
-		"dunit": "1.0.10",
-		"d-unit": "0.7.1"
+		"d-unit": "0.7.2",
+		"dunit": "1.0.10"
 	}
 }

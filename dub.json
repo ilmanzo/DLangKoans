@@ -5,6 +5,14 @@
 	"authors": ["Andrea Manzini"],
 	"homepage": "http://github.com/ilmanzo/DLangKoans",
 	"license": "GPL-2.0",
+ "buildTypes": {
+   "release": {
+      "buildOptions": ["optimize"]
+   },
+   "debug": {
+      "buildOptions": ["verbose"]
+   }
+ },
 	"dependencies": {
 		"d-unit": ">=0.7.1"
 	}
