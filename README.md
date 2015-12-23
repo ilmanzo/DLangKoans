@@ -21,11 +21,8 @@ How it works:
 
 TODO:
 ----
- - verify order of execution among many test modules
  - stop at first failed test ?
  
-
-
 
 References:
 -----------
