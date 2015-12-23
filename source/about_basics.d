@@ -3,6 +3,8 @@ module about_basics;
 import helpers;
 import dunit;
 
+import std.math;  // for isNaN
+
 class AboutBasics
 {
   mixin UnitTest;
@@ -26,12 +28,12 @@ class AboutBasics
 
     //for all types
     float f;
-    assertEquals(f, FILL_IN_THIS_DECIMAL);
+    assertEquals(isNaN(f),FILL_IN_TRUE_OR_FALSE);  // float equality is not defined, e.g. nan != nan
 
-    k c;  //also composite
+    k c;  //also composite gets default initializers
 
     assertEquals(c.x, FILL_IN_THIS_NUMBER);
-    assertEquals(c.f, FILL_IN_THIS_DECIMAL);
+    assertEquals(isNaN(c.f), FILL_IN_TRUE_OR_FALSE);
     assertEquals(c.s, FILL_IN_THIS_STRING);
   }
 
