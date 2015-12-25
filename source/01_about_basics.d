@@ -28,7 +28,7 @@ class AboutBasics
 
     //for all types
     float f;
-    assertEquals(isNaN(f),FILL_IN_TRUE_OR_FALSE);  // float equality is not defined, e.g. nan != nan
+    assertEquals(isNaN(f), FILL_IN_TRUE_OR_FALSE);  // float equality is not defined, e.g. nan != nan
 
     k c;  //also composite gets default initializers
 
