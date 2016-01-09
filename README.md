@@ -1,14 +1,14 @@
 DLangKoans
 ==========
 
-The D Programming Language Koans. Inspired from RubyKoans, CppKoans, GoKoans; an educational unit test suite for the [D Programming Language](http://dlang.org)
+The D Programming Language Koans. Inspired from RubyKoans, CppKoans, GoKoans; an educational unit test suite for the [D Programming Language](https://dlang.org)
 
 ...work in progress...
 
 SETUP:
 ------
  - clone or download this repository
- - install dub build manager http://code.dlang.org/download
+ - install dub build manager https://code.dlang.org/download
  - enjoy
 
 
