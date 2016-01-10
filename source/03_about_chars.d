@@ -25,11 +25,20 @@ class AboutChars
     assertEquals(cast(int)(a_character), FILL_IN_THIS_NUMBER);
   }
 
-
   @Test
   public void more_chars_are_a_string() {
     string some_characters = "Hello World";
     assertEquals(some_characters.length, FILL_IN_THIS_NUMBER);
+  }
+
+  @Test
+  public void unicode_chars() {
+    char  e1 = 'e';
+    wchar e2 = 'è';
+    dchar e3 = 'é';
+    assertEquals(e1.sizeof,FILL_IN_THIS_NUMBER);
+    assertEquals(e2.sizeof,FILL_IN_THIS_NUMBER);
+    assertEquals(e3.sizeof,FILL_IN_THIS_NUMBER);
   }
 
 }
