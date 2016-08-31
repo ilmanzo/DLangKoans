@@ -10,14 +10,14 @@ class AboutFiles {
 
   private immutable auto FILENAME="just_a_test.txt";
 
-  @Before
+  @BeforeEach
   public void CreateTestFile() {
     import std.stdio; //notice the local import
     auto testfile = File(FILENAME, "w");
     testfile.writeln("some data");
   } //file is closed when File object goes out of scope
 
-  @After
+  @AfterEach
   public void RemoveTestFile() {
     import std.file; //notice the local import
     remove(FILENAME);

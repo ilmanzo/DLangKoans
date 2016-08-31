@@ -7,7 +7,6 @@ class AboutArrays
 {
   mixin UnitTest;
 
-
   @Test
    void fixed_length_arrays() {
     string[4] fruits = ["banana", "mango", "apple", "orange"];
@@ -44,5 +43,19 @@ class AboutArrays
     a ~= [3, 4];
     assertEquals(a, FILL_IN_THIS_ARRAY);
   }
+
+  @Test
+  void slices_of_the_same_array() {
+    int[] items=[1,1,2,3,5,8,13,21,34,55,89,144];
+    auto slice1=items[2..9];
+    auto slice2=items[4..7];
+    assertEquals(slice1[0],FILL_IN_THIS_NUMBER);
+    assertEquals(slice2[0],FILL_IN_THIS_NUMBER);
+    slice1[3]=99;
+    assertEquals(slice2[1],FILL_IN_THIS_NUMBER);
+    slice2.length=2;  //truncating a slice...
+    assertEquals(items.length,FILL_IN_THIS_NUMBER); // ... changes original array lenght ?
+  }
+
 
 }
