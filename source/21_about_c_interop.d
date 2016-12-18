@@ -1,7 +1,7 @@
 module about_c_interop;
 
-import helpers;
 import dunit;
+import helpers;
 
 extern (C) { 
     int simple_c_function(int a, int b)

@@ -1,14 +1,14 @@
 module about_bitwise_operators;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutBitwiseOperators
 {
   mixin UnitTest;
 
   @Test
-  public void shifts() {
+  void shifts() {
     auto i = 1;
     auto j = -8;
     assertEquals(j << 3, FILL_IN_THIS_NUMBER);
@@ -18,7 +18,7 @@ class AboutBitwiseOperators
   }
 
   @Test
-  public void operators() {
+  void operators() {
     assertEquals(2 | 4, FILL_IN_THIS_NUMBER); // or
     assertEquals(3 & 5, FILL_IN_THIS_NUMBER); // and
     assertEquals(6 ^ 4, FILL_IN_THIS_NUMBER); // xor

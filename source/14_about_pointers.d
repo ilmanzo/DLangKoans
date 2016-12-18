@@ -1,7 +1,7 @@
 module about_pointers;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutPointers {
   mixin UnitTest;

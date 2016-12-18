@@ -1,17 +1,18 @@
 module about_exceptions;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutExceptions {
   mixin UnitTest;
 
   private  class Bad_area: Exception {
       public this(string msg) { super(msg); }
-  };
+  }
+
   private class Something_else : Exception {
       public this(string msg) { super(msg); }
-  };
+  }
 
   private int area(int length, int width) {
     if (length <= 0 || width <= 0)

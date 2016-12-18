@@ -1,7 +1,7 @@
 module about_templates;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutTemplates {
   mixin UnitTest;

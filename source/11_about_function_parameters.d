@@ -1,7 +1,7 @@
 module about_functions_parameters;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutFunctionParameters {
   mixin UnitTest;

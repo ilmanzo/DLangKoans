@@ -1,7 +1,7 @@
 module about_basics;
 
-import helpers;
 import dunit;
+import helpers;
 
 import std.math;  // for isNaN
 
@@ -9,7 +9,7 @@ class AboutBasics
 {
   mixin UnitTest;
 
-  struct k {
+  struct My_struct {
     int x;
     float f;
     string s;
@@ -30,7 +30,7 @@ class AboutBasics
     float f;
     assertEquals(isNaN(f), FILL_IN_TRUE_OR_FALSE);  // float equality is not defined, e.g. nan != nan
 
-    k c;  //also composite gets default initializers
+    My_struct c;  //also composite gets default initializers
 
     assertEquals(c.x, FILL_IN_THIS_NUMBER);
     assertEquals(isNaN(c.f), FILL_IN_TRUE_OR_FALSE);

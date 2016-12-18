@@ -1,5 +1,5 @@
-import std.stdio;
 import dunit;
+import std.stdio;
 
 mixin Main;
 ///

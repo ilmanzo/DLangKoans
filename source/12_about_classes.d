@@ -1,7 +1,7 @@
 module about_classes;
 
-import helpers;
 import dunit;
+import helpers;
 
 class A {
   private int myValue;  // not accessible from outside

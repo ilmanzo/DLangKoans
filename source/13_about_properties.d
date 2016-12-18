@@ -1,7 +1,7 @@
 module about_properties;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutProperties {
   mixin UnitTest;

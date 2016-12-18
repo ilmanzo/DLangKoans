@@ -2,8 +2,8 @@
 //use this empty template as a start for writing new 'about' entries
 module about_alias_this;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutAliasThis {
   mixin UnitTest;
@@ -23,7 +23,7 @@ class AboutAliasThis {
  
   struct B
   {
-    int foo() { return 1; };
+    int foo() { return 1; }
     alias foo this;
   }
 

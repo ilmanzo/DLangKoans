@@ -1,13 +1,13 @@
 module about_strings;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutStrings {
   mixin UnitTest;
 
   @Test
-  public void stringSlicing() {
+  void stringSlicing() {
     auto sentence = "The quick brown fox";
     assertEquals(sentence[0], FILL_IN_THIS_CHAR);
     assertEquals(sentence[1..3], FILL_IN_THIS_STRING);
@@ -16,7 +16,7 @@ class AboutStrings {
   }
 
   @Test
-  public void stringConcatenation() {
+  void stringConcatenation() {
     auto str1 = "Hello";
     auto str2 = " World";
     auto str = str1 ~ str2;
@@ -24,7 +24,7 @@ class AboutStrings {
   }
 
   @Test
-  public void stringsAreImmutable() {
+  void stringsAreImmutable() {
     auto str = "hello";
     char[] s = "hello".dup;
     s[0] = 'H';
@@ -32,7 +32,7 @@ class AboutStrings {
   }
 
   @Test
-  public void unicodeLiterals() {
+  void unicodeLiterals() {
     string s = "résumé"c;   // same as "résumé"
     wstring w = "résumé"w;
     dstring d = "résumé"d;

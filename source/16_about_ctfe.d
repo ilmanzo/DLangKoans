@@ -1,7 +1,7 @@
 module about_ctfe;
 
-import helpers;
 import dunit;
+import helpers;
 
 /* CTFE stands for Compile Time Function Execution;
  * D compiler is able to execute code at compile time
@@ -32,7 +32,8 @@ class AboutCTFE {
   @Test
   public void simple_CTFE() {
     auto a = 1 + 2;  // this expression is evaluated by the compiler (like in C)
-    enum b = sum(3, 4);  // but also this
+    enum b = sum(3, 4);  // but also this. What's the difference ?
+    assertEquals(a, FILL_IN_THIS_NUMBER);
     assertEquals(b, FILL_IN_THIS_NUMBER);
   }
 

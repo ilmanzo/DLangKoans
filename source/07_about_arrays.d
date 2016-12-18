@@ -1,14 +1,14 @@
 module about_arrays;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutArrays
 {
   mixin UnitTest;
 
   @Test
-   void fixed_length_arrays() {
+  void fixed_length_arrays() {
     string[4] fruits = ["banana", "mango", "apple", "orange"];
     assertEquals(fruits[0], FILL_IN_THIS_STRING);
     assertEquals(fruits.length, FILL_IN_THIS_NUMBER);
@@ -56,6 +56,5 @@ class AboutArrays
     slice2.length=2;  //truncating a slice...
     assertEquals(items.length,FILL_IN_THIS_NUMBER); // ... changes original array lenght ?
   }
-
 
 }

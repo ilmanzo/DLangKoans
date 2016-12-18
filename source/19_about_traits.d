@@ -1,7 +1,7 @@
 module about_traits;
 
-import helpers;
 import dunit;
+import helpers;
 
 /*
 *  Traits are extensions to the language to enable programs, at compile time,
@@ -22,7 +22,7 @@ class AboutTraits {
   public void allMembers() {
     auto members = [ __traits(allMembers, MyClass) ];
     assertEquals(members.length, FILL_IN_THIS_NUMBER);
-    import std.algorithm;
+    import std.algorithm : canFind;
     assertEquals(members.canFind("foo"), FILL_IN_TRUE_OR_FALSE);
   }
 }

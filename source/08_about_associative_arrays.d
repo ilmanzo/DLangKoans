@@ -1,7 +1,7 @@
 module about_associative_arrays;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutAssociativeArrays
 {
@@ -46,5 +46,17 @@ class AboutAssociativeArrays
 
     assertEquals(ages.length, FILL_IN_THIS_NUMBER);
   }
+
+  @Test
+    void keys_and_values() {
+      string[string] colors =  [ "black":"000000",
+                                 "white":"FFFFFF",
+                                 "red"  :"FF0000",
+                                 "green":"00FF00",
+                                 "blue" :"0000FF"];
+      assertEquals(colors.keys.length,FILL_IN_THIS_NUMBER);   // .keys gives an array with all the keys
+      assertEquals(colors.values.length,FILL_IN_THIS_NUMBER); // same for .values
+
+    }
 
 }

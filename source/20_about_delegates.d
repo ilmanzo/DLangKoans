@@ -1,7 +1,7 @@
 module about_delegates;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutDelegates {
   mixin UnitTest;
@@ -43,20 +43,20 @@ class AboutDelegates {
     private string name="UNTITLED";
     private string color="DEFAULT";
 
-    void Click() {  // executes user defined callbacks
+    void click() {  // executes user defined callbacks
                     // giving each callback full access to this "Button" context
       foreach(h; handlers) {
         h(this);
       }
       click_counter++;
     }
-    void RegisterHandler(ClickHandler func)
+    void registerHandler(ClickHandler func)
     {
       handlers~=func;
     }
 
     @property string state() {
-     import std.format;
+     import std.format : format;
      return format("you clicked %d times the button %s with color %s",click_counter,name,color);
     }
 
@@ -69,18 +69,16 @@ class AboutDelegates {
   public void delegates_for_callback() {
     auto b1=new Button();
     auto b2=new Button();
-    b1.RegisterHandler( delegate(Button b){b.name="OK";} );
-    b2.RegisterHandler( delegate(Button b){b.color="RED";} );
-    b2.RegisterHandler( delegate(Button b){b.click_counter--;} );   // can be chained
-    b1.Click();
-    b1.Click();
-    b2.Click();
-    b2.Click();
+    b1.registerHandler( delegate(Button b){b.name="OK";} );
+    b2.registerHandler( delegate(Button b){b.color="RED";} );
+    b2.registerHandler( delegate(Button b){b.click_counter--;} );   // can be chained
+    b1.click();
+    b1.click();
+    b2.click();
+    b2.click();
     assertEquals(b1.state,FILL_IN_THIS_STRING);
     assertEquals(b2.state,FILL_IN_THIS_STRING);
   }
-  
-
 
 
 }

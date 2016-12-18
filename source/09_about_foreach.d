@@ -1,7 +1,7 @@
 module about_foreach;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutForeach
 {

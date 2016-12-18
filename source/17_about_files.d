@@ -1,7 +1,7 @@
 module about_files;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutFiles {
   mixin UnitTest;
@@ -11,22 +11,22 @@ class AboutFiles {
   private immutable auto FILENAME="just_a_test.txt";
 
   @BeforeEach
-  public void CreateTestFile() {
-    import std.stdio; //notice the local import
+  public void createTestFile() {
+    import std.stdio : File; //notice the local import
     auto testfile = File(FILENAME, "w");
     testfile.writeln("some data");
   } //file is closed when File object goes out of scope
 
   @AfterEach
-  public void RemoveTestFile() {
-    import std.file; //notice the local import
+  public void removeTestFile() {
+    import std.file : remove; //notice the local import
     remove(FILENAME);
   } //file is closed when File object goes out of scope
 
   @Test
-  public void ReadFile() {
-    import std.stdio;
-    import std.string;
+  public void readFile() {
+    import std.stdio : File;
+    import std.string : strip;
     auto myfile=File(FILENAME,"r");
     auto data=strip(myfile.readln());
     auto expected = FILL_IN_THIS_STRING;

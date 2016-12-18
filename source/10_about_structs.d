@@ -1,7 +1,7 @@
 module about_structs;
 
-import helpers;
 import dunit;
+import helpers;
 
 //struct defines a type, not a variable
 struct TimeOfDay {

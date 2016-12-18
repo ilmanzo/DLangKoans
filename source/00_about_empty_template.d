@@ -2,14 +2,14 @@
 //use this empty template as a start for writing new 'about' entries
 module about_empty_template;
 
-import helpers;
 import dunit;
+import helpers;
 
 class AboutEmptyTemplate {
   mixin UnitTest;
 
   @Test
-  public void s() {
+  void s() {
 //    assertEquals(2, 1);
   }
 
