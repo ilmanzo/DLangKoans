@@ -26,7 +26,10 @@ class AboutStrings {
   @Test
   void stringsAreImmutable() {
     auto str = "hello";
-    char[] s = "hello".dup;
+    // we cannot do this:
+    // str[0]='H';   why?
+    // but we must get a mutable reference before
+    char[] s = str.dup;
     s[0] = 'H';
     assertEquals(s, FILL_IN_THIS_STRING);
   }
