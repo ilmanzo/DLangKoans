@@ -18,14 +18,14 @@ class AboutTuples {
   void construct_tuple_simple() {
       auto mytuple = tuple(13, "bananas");
       assertEquals(mytuple[0],FILL_IN_THIS_NUMBER); // tuples element can be accessed by index
-      assertEquals(mytuple[1],FILL_IN_THIS_STRING); // tuples element can be accessed by index
+      assertEquals(mytuple[1],FILL_IN_THIS_STRING); // also iteration works here
   }
 
   @Test
   void construct_tuple_template() {
       // if you build the tuple using the template Tuple!() you can access elements by name
       auto mytuple = Tuple!(int,"number",string, "fruitname")(13,"bananas");
-      assertEquals(mytuple.fruitname,FILL_IN_THIS_STRING); // tuples element can be accessed by index
+      assertEquals(mytuple.fruitname,FILL_IN_THIS_STRING); // tuples element can also be accessed by name
   }
 
   @Test
