@@ -1,7 +1,7 @@
 {
 	"fileVersion": 1,
 	"versions": {
-		"d-unit": "0.8.1",
+		"d-unit": "0.9.0",
 		"unit-threaded": "0.7.2"
 	}
 }
