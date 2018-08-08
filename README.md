@@ -30,3 +30,7 @@ References:
  - https://github.com/torbjoernk/CppKoans/
  - https://github.com/cdarwin/go-koans
 
+Thanks to:
+-----------
+[Ali Çehreli - Programming in D](http://ddili.org/ders/d.en/index.html)
+
