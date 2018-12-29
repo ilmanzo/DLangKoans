@@ -15,7 +15,11 @@ class AboutOperatorOverloading {
   	bool opEquals(Color col) const {
   		return (this.r == col.r) && (this.g==col.g) && (this.b == col.b);
   	}
-  };
+	
+	size_t toHash() const nothrow @safe {
+		return r*256*256+g*256+b;
+	}
+  }
 
   @Test
   void colorEquality() {
