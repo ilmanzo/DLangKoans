@@ -36,6 +36,14 @@ class AboutExceptions {
 
     assertEquals(area1,FILL_IN_THIS_NUMBER);
     assertEquals(result,FILL_IN_THIS_NUMBER);
- }
+   }
+
+  @Test
+  void aboutEnforce() {
+    import std.exception : enforce;
+    auto exception = expectThrows(enforce(false));
+    assertEquals(exception.msg,FILL_IN_THIS_STRING);
+  }
+
 
 }
