@@ -30,7 +30,7 @@ class AboutStructs {
 
   @Test
     public void structs_members_are_copied() {
-      auto student1 = Student(1,[70,90,85]);
+      const auto student1 = Student(1,[70,90,85]);
       auto student2 = student1;
       student2.number = 2;
       assertEquals(student2.grades, FILL_IN_THIS_ARRAY);

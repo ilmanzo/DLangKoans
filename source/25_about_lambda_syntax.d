@@ -18,7 +18,7 @@ class AboutLambdaSyntax {
 
   @Test
   void try_lambda_syntax() {
-      int[] numbers = [ 20, 1, 10, 300, -2 ];
+      const int[] numbers = [ 20, 1, 10, 300, -2 ];
 
       // filter returns all the values where the given function is true
 
