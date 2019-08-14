@@ -43,7 +43,7 @@ class AboutAliasThis {
   @Test
   public void assignment() {
   	A a={ name: "another A struct", n:11 };
-  	a=19; // think what does this ... Is it legal ? Why ?
+  	a.n=19; // think what does this ... Is it legal ? Why ?
   	assertEquals(a,FILL_IN_THIS_NUMBER);  
   }
 
