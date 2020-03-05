@@ -35,4 +35,16 @@ class AboutNumbers {
     assertEquals(my_integer.init, FILL_IN_THIS_NUMBER);      // initial value
     assertEquals(my_integer.stringof, FILL_IN_THIS_STRING);  // string representation
   }
+
+
+
+  @Test
+  void integersCanBeExpressedInManyBases() {
+    uint binNumber = 0b_10000000_00000000_00000000_00000000;
+    uint hexNumber = 0x_0030_a00f;
+    assertEquals(binNumber, FILL_IN_THIS_NUMBER);
+    assertEquals(hexNumber, FILL_IN_THIS_NUMBER);
+  }
+
+
 }
