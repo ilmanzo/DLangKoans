@@ -6,7 +6,7 @@
 	"homepage": "https://github.com/ilmanzo/DLangKoans",
 	"license": "GPL-2.0",
 	"dependencies": {
-		"d-unit": ">=0.10.0"
+		"d-unit": ">=0.10.1"
 	},
 	"buildOptions": ["releaseMode"]
 }
