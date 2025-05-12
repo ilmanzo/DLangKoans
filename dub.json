@@ -1,12 +1,16 @@
 {
-	"name": "dlang_koans",
+	"authors": [
+		"Andrea Manzini"
+	],
+	"copyright": "Copyright © Andrea Manzini",
+	"dependencies": {
+		"d-unit": {
+			"version": "~master",
+			"path": "./dunit"
+		}
+	},
 	"description": "A series of exercises to learn D Programming Language",
-	"copyright": "Copyright © 2014-2018, Andrea Manzini",
-	"authors": ["Andrea Manzini"],
 	"homepage": "https://github.com/ilmanzo/DLangKoans",
 	"license": "GPL-2.0",
-	"dependencies": {
-		"d-unit": ">=0.10.1"
-	},
-	"buildOptions": ["releaseMode"]
+	"name": "dlang_koans"
 }

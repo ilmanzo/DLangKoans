@@ -5,6 +5,7 @@ import helpers;
 
 import std.concurrency;
 import core.thread;
+import std.stdio : write;
 
 //this function will run in another thread
 //also showing simple message passing
@@ -42,27 +43,21 @@ class AboutConcurrency
             auto result = receiveOnly!int();
             sum += result;
         }
-        worker.send(-1); //signal worker to end 
+        worker.send(-1); //signal worker to end
         assertEquals(sum, FILL_IN_THIS_NUMBER);
     }
 
     @Test void wait_for_result()
     {
-        Tid worker = spawn(&workerSlowFunc, thisTid);
+        Tid _ = spawn(&workerSlowFunc, thisTid);
         bool received = false;
         while (!received)
         {
             received = receiveTimeout(dur!("msecs")(100), (string message) {
-                assertEquals(message,FILL_IN_THIS_STRING);
+                assertEquals(message, FILL_IN_THIS_STRING);
             });
-
-            if (!received) {
-                import std.stdio : write;
+            if (!received)
                 write(".");
-            }
-
         }
-
     }
-
 }
