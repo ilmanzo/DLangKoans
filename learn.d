@@ -2,15 +2,13 @@ module learn;
 
 import core.runtime;
 import std.stdio;
-import std.conv;
-import std.algorithm : startsWith;
 import koans;
 static import core.exception;
 
 shared static this()
 {
-    // Override the default unit test runner to do nothing. After that, "main" will
-    // be called.
+    // Override the default unit test runner to do nothing. 
+    // After that, "main" will be called.
     Runtime.moduleUnitTester = { return true; };
 }
 
