@@ -19,10 +19,6 @@ How it works:
  - think and make the test pass
  - goto first step
 
-TODO:
-----
- - stop at first failed test ?
- 
 
 References:
 -----------
@@ -33,4 +29,3 @@ References:
 Thanks to:
 -----------
 [Ali Çehreli - Programming in D](http://ddili.org/ders/d.en/index.html)
-

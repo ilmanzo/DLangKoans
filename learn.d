@@ -17,9 +17,8 @@ shared static this()
 void main()
 {
     writeln("Starting your journey to enlightenment...");
-
-
-
+    writeln("You will be asked to fill in the blanks in the koans.");
+    writeln("Ensure to run 'dub --build=unittest' to run the tests.");
     static foreach (m; koans.koansModules)
     {
         mixin("static import koans." ~ m ~ ";");
