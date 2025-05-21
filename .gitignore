@@ -6,3 +6,4 @@ dub.selections.json
 bin/dub
 dlang_koans
 dlang_koans-test-library
+dlang_koans-test-application
