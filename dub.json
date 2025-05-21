@@ -2,15 +2,15 @@
 	"authors": [
 		"Andrea Manzini"
 	],
+	"importPaths": [
+		"koans"
+	],
+	"sourcePaths": ["."],
 	"copyright": "Copyright © Andrea Manzini",
-	"dependencies": {
-		"d-unit": {
-			"version": "~master",
-			"path": "./dunit"
-		}
-	},
 	"description": "A series of exercises to learn D Programming Language",
 	"homepage": "https://github.com/ilmanzo/DLangKoans",
 	"license": "GPL-2.0",
-	"name": "dlang_koans"
+	"name": "dlang_koans",
+	"targetType": "executable",
+	"mainSourceFile": "learn.d"
 }

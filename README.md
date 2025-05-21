@@ -14,15 +14,11 @@ SETUP:
 
 How it works:
 ------------
- - execute dub
+ - execute `dub --build=unittest`
  - observe test errors
  - think and make the test pass
  - goto first step
 
-TODO:
-----
- - stop at first failed test ?
- 
 
 References:
 -----------
@@ -33,4 +29,3 @@ References:
 Thanks to:
 -----------
 [Ali Çehreli - Programming in D](http://ddili.org/ders/d.en/index.html)
-
