@@ -15,6 +15,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
         dc: [dmd-latest, ldc-latest]
+        exclude:
+          # dmd has no arm64 build; macos-latest is arm64
+          - os: macos-latest
+            dc: dmd-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
