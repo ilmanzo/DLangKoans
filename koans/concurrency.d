@@ -24,7 +24,7 @@ void worker2xFunc(Tid tid)
 void workerSlowFunc(Tid tid)
 {
     //tid.send("starting...");
-    Thread.sleep(dur!("msecs")(500),);
+    Thread.sleep(500.msecs);
     tid.send("done!");
 }
 
@@ -48,7 +48,7 @@ unittest  // wait_for_result()
     bool received = false;
     while (!received)
     {
-        received = receiveTimeout(dur!("msecs")(100), (string message) {
+        received = receiveTimeout(100.msecs, (string message) {
             assert(message == FILL_IN_THIS_STRING);
         });
         if (!received)

@@ -25,10 +25,9 @@ unittest  // try_lambda_syntax()
     auto filtered_with_anon_func = numbers.filter!(function bool(x) {
         return x < 20;
     });
-    // 'function' keyword is not necessary, so 
-    // 'bool(x) { return x < 20; }' 
-    // also works; the return type can be inferred, so the above can be written as
-    // auto filtered_with_anon_func=numbers.filter!( x { return x < 20;  });
+    // the 'function' keyword and the return type can be omitted, so
+    // 'numbers.filter!((x) { return x < 20; })'
+    // also works
 
     // and now let's replace the return and curly braces with the "new" lambda syntax
     auto filtered_with_lambda = numbers.filter!(n => n < 20);

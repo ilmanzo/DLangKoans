@@ -12,7 +12,7 @@ unittest  // construct_tuple_simple()
 {
     auto mytuple = tuple(13, "bananas");
     assert(mytuple[0] == FILL_IN_THIS_NUMBER); // tuples element can be accessed by index
-    assert(mytuple[1] == FILL_IN_THIS_STRING); // also iteration works here
+    assert(mytuple[1] == FILL_IN_THIS_STRING); // indexes start at 0, like arrays
 }
 
 unittest  // construct_tuple_template()

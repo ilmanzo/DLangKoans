@@ -31,4 +31,62 @@ unittest  // colorEquality()
     assert(result2 == FILL_IN_TRUE_OR_FALSE);
 }
 
-//TODO show off other operator overloading
+struct Vector2
+{
+    int x, y;
+
+    Vector2 opBinary(string op : "+")(const Vector2 rhs) const
+    {
+        return Vector2(this.x + rhs.x, this.y + rhs.y);
+    }
+
+    int opIndex(size_t index) const
+    {
+        if (index == 0)
+            return x;
+        if (index == 1)
+            return y;
+        assert(0, "Index out of bounds");
+    }
+}
+
+unittest  // binary_operator_overloading()
+{
+    // Binary operators like + are overloaded via opBinary template
+    const a = Vector2(2, 3);
+    const b = Vector2(4, 5);
+    const result = a + b;
+    assert(result.x == FILL_IN_THIS_NUMBER);
+    assert(result.y == FILL_IN_THIS_NUMBER);
+}
+
+struct Priority
+{
+    int level;
+
+    int opCmp(const Priority rhs) const
+    {
+        if (this.level < rhs.level)
+            return -1;
+        if (this.level > rhs.level)
+            return 1;
+        return 0;
+    }
+}
+
+unittest  // comparison_operator_overloading()
+{
+    // Comparison operators (<, <=, >, >=) are overloaded via opCmp
+    const low = Priority(1);
+    const high = Priority(10);
+    auto result = (low < high);
+    assert(result == FILL_IN_TRUE_OR_FALSE);
+}
+
+unittest  // index_operator_overloading()
+{
+    // Array indexing syntax is overloaded via opIndex
+    const v = Vector2(7, 9);
+    assert(v[0] == FILL_IN_THIS_NUMBER);
+    assert(v[1] == FILL_IN_THIS_NUMBER);
+}

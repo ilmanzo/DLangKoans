@@ -1,4 +1,3 @@
-//use this empty template as a start for writing new 'about' entries
 module koans.alias_this;
 
 import koans.helpers;

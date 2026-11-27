@@ -12,7 +12,7 @@ unittest  // lonely_char()
 unittest  // chars_have_a_size()
 {
     char a_character = 'b';
-    assert(a_character.sizeof == 3, "chars have a size");
+    assert(a_character.sizeof == FILL_IN_THIS_NUMBER, "chars have a size");
 }
 
 unittest  // chars_are_numbers()

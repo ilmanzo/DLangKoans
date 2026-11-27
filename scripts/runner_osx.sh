@@ -5,5 +5,5 @@
 
 while true; do
   fswatch -1 -e .git . 
-  dub --build=unittest
+  dub
 done

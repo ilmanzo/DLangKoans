@@ -43,3 +43,16 @@ unittest  // working_with_c_strings()
     auto result = string_c_function(toStringz(message));
     assert(result == FILL_IN_THIS_CHAR);
 }
+
+unittest  // libc_strlen()
+{
+    import core.stdc.string : strlen;
+    import std.string : toStringz;
+
+    // String literals in D are implicitly null-terminated
+    assert(strlen("hello") == FILL_IN_THIS_NUMBER);
+
+    // Dynamic strings or slices must be converted using toStringz
+    auto message = "D programming";
+    assert(strlen(toStringz(message)) == FILL_IN_THIS_NUMBER);
+}

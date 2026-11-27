@@ -14,7 +14,7 @@ SETUP:
 
 How it works:
 ------------
- - execute `dub --build=unittest`
+ - execute `dub` (or `dub --build=unittest`)
  - observe test errors
  - think and make the test pass
  - goto first step

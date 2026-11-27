@@ -48,6 +48,6 @@ unittest  // foreach_with_associative_arrays()
         v += value - 1900;
     }
 
-    assert(s == FILL_IN_THIS_STRING);
+    assert(s.length == FILL_IN_THIS_NUMBER); // iteration order of an associative array is unspecified!
     assert(v == FILL_IN_THIS_NUMBER);
 }

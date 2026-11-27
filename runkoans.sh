@@ -1,2 +1,2 @@
 #!/bin/sh
-dub --build=unittest
+exec dub "$@"

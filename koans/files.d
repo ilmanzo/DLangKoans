@@ -17,7 +17,7 @@ void removeTestFile()
 {
     import std.file : remove; //notice the local import
     remove(FILENAME);
-} //file is closed when File object goes out of scope
+}
 
 unittest  // readFile()
 {
@@ -25,9 +25,8 @@ unittest  // readFile()
     import std.string : strip;
 
     createTestFile;
+    scope (exit) removeTestFile; // runs even if an assert below fails
     auto myfile = File(FILENAME, "r");
     auto data = strip(myfile.readln());
-    auto expected = FILL_IN_THIS_STRING;
-    assert(expected, data);
-    removeTestFile;
+    assert(data == FILL_IN_THIS_STRING);
 }

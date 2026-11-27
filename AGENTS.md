@@ -57,8 +57,10 @@ Use the following commands to interact with the project:
 ### Run / Test the Koans
 Executes the main suite to run koans sequentially:
 ```bash
-dub --build=unittest
+dub
 ```
+(Note: `dub --build=unittest` also works.)
+
 Alternatively, use the shell wrapper:
 ```bash
 ./runkoans.sh

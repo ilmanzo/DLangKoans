@@ -26,3 +26,6 @@ jobs:
 
       - name: Verify Build
         run: dub build --build=unittest
+
+      - name: Smoke test (first koan must fail at basics.d:16)
+        run: dub run 2>&1 | perl -pe 's/\e\[[0-9;]*m//g' | grep 'koans/basics.d at line 16'

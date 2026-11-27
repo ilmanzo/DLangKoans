@@ -9,11 +9,13 @@ static immutable koansModules = [
     "associative_arrays", "foreach_loop", 
     "structs", "unions",  "function_parameters", 
     "classes", "properties",  "pointers", 
-    "ref_functions", " exceptions", "ctfe", "files",
+    "ref_functions", "exceptions", "ctfe", "files",
     "templates", "mixins", "tuples", "traits",
     "delegates", "c_interop", "alias_this",
     "operator_overloading", "lambda_syntax", 
     "concurrency",
+    "ranges", "const_immutable", "static_if_version", "attributes",
+    "scope_guards", "contracts",
 ];
 
 

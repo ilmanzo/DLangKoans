@@ -22,7 +22,7 @@ private int area(int length, int width)
 {
     if (length <= 0 || width <= 0)
         throw new Bad_area("bad area!");
-    if (length == 4 || width == 0)
+    if (length == 4 || width == 4)
         throw new Something_else("Something else!");
     return length * width;
 }
@@ -48,10 +48,10 @@ unittest  // aboutThrowingSomething()
     assert(result == FILL_IN_THIS_NUMBER);
 }
 
-// unittest  // aboutEnforce()
-// {
-//     import std.exception : enforce;
+unittest  // aboutEnforce()
+{
+    import std.exception : enforce, collectException;
 
-//     auto exception = expectThrows(enforce(false));
-//     assert(exception.msg == FILL_IN_THIS_STRING);
-// }
+    auto exception = collectException(enforce(false)); // enforce throws when its condition is false
+    assert(exception.msg == FILL_IN_THIS_STRING);
+}

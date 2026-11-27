@@ -57,4 +57,19 @@ unittest  // exerciseInOutParameters()
     assert(prod == FILL_IN_THIS_NUMBER);
 }
 
+// a slice parameter is a copy of the slice (pointer + length),
+// but it still points to the caller's elements
+
+void zero_first(int[] arr)
+{
+    arr[0] = 0;
+}
+
+unittest  // testSliceElementsAreShared()
+{
+    auto my_array = [4, 8, 15];
+    zero_first(my_array);
+    assert(my_array[0] == FILL_IN_THIS_NUMBER);
+}
+
 /*-----------------------------------------*/

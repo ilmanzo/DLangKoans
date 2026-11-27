@@ -25,7 +25,7 @@ unittest  // array_slicing()
     int[] a = [4, 3, 2, 1];
     a[0 .. 2] = [1, 2];
     assert(a == FILL_IN_THIS_ARRAY);
-    a[0 .. $] = [0, 0, 0, 0]; // $ is always the last element
+    a[0 .. $] = [0, 0, 0, 0]; // inside [], $ is the array length
     assert(a == FILL_IN_THIS_ARRAY);
 }
 
@@ -48,5 +48,5 @@ unittest  // slices_of_the_same_array()
     slice1[3] = 99;
     assert(slice2[1] == FILL_IN_THIS_NUMBER);
     slice2.length = 2; //truncating a slice...
-    assert(items.length == FILL_IN_THIS_NUMBER); // ... changes original array lenght ?
+    assert(items.length == FILL_IN_THIS_NUMBER); // ... changes original array length ?
 }
